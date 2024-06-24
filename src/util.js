@@ -15,5 +15,4 @@ function addOffers(items) {
   }
   return fragment;
 }
-
 export { DATE_FORMAT, getRandomElement, addOffers };
