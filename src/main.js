@@ -1,7 +1,10 @@
 import Presenter from "./presenter/presenter";
-import { render } from "./render";
+import PointModel from "./model/pointModel";
 
 const tripEvents = document.querySelector('.trip-events');
+const pointModel = new PointModel();
 
-const presenter = new Presenter(tripEvents);
+pointModel.init();
+
+const presenter = new Presenter(tripEvents, pointModel);
 presenter.init();
